@@ -49,12 +49,14 @@ dependencies {
     implementation(libs.gson) // Optional: For Gson
     implementation(libs.androidx.lifecycle.viewmodel.compose) // ViewModel integration
     implementation(libs.kotlinx.coroutines.android) // Coroutines
+    implementation(libs.coil.kt.coil.compose)
+    implementation(libs.coil.network.okhttp)
 
     testImplementation(libs.junit)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+
 }
